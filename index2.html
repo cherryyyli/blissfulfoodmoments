@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>✦ Blissful Food Moments ✦</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Karma", sans-serif;
+    }
+    .w3-bar-block .w3-bar-item {
+      padding: 20px;
+    }
+    
+    /* Apply background image to the entire body */
+    body {
+      background-image: url("background.jpg");
+      background-size: cover; /* Ensures the background image covers the entire element */
+      background-repeat: no-repeat; /* Prevents the image from repeating */
+      background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    }
+
+    /* Exclude the header from the background image and add background color */
+    .w3-top {
+      background-color: hsl(310, 64%, 89%); /* Set the background color for the top menu */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-lightpink w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16"><h3><strong>✦ Blissful Food Moments ✦</strong></h3></div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="bbq.jpg" alt="Japanese BBQ" style="width:100%">
+      <h3>Skewer Kitchen</h3>
+      <h5>The Perfect place for supper in Hong Kong</h5>
+      <p>Been here 2 times a week, they serve the best Japanese BBQ, you must try the signature Pork lollipop, lychee pork and the black sugar pineapple!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="beef.jpg" alt="Japanese A4 beef" style="width:100%">
+      <h3>Aji MGM Cotai Macau</h3>
+      <h5>Unforgettable Japanese A4 beef Ramen</h5>
+      <p>The beef melts into your mouth instantly, blend the egg yolk with ramen, it could be the best comfort food in winter.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="bluebottle.jpg" alt="study cafe" style="width:100%">
+      <h3>Bluebottle Wanchai</h3>
+      <h5>The best WFH cafe you could ask for!</h5>
+      <p>The cafe has 3 floors, it is spacious and filled with natural sunlight, making me more motivated to work. Also, you should try their mushroom sandwich, it is cheesy with a hint of sourness, making it fresh and appetizing. For coffee, the Latte portion is bigger than Cappuccino.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="cwb drinks.jpg" alt="CWB Bar" style="width:100%">
+      <h3>Pistol Lounge CWB</h3>
+      <h5>Get your customized cocktail after work!</h5>
+      <p>Located on the 26th floor in the Sharp, knock on their door and wait to be seated for a magical journey with your friends.</p>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="pistachio.jpg" alt="Popsicle" style="width:100%">
+      <h3>Cotiz Macau</h3>
+      <h5>All I Need Is a Pistachio Pancake for Tea</h5>
+      <p>The thick flavor Pistachio ice cream, best matched with the souffle pancake. Pistachio Lovers, if you happen to be around in Macau, you must go visit Cotiz, they serve the best puff and the environment is Instagrammable and chill for catching up with friends!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="sushiro.jpg" alt="Sushi Train" style="width:100%">
+      <h3>Sushiro</h3>
+      <h5>The best valued sushi train in Hong Kong</h5>
+      <p>My favorite sushi place to go to, the sushi is good value and has a lot of choices, they also release seasonal food and dessert, making it appealing to keep going back.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="sweetsoup.jpg" alt="HK sweetsoup" style="width:100%">
+      <h3>Ching Ching Dessert</h3>
+      <h5>Super Localized Hong Kong Sweet soup in Wanchai</h5>
+      <p>The mix of traditional and innovative Hong Kong sweet soup, the must-try dessert is custom-made by the boss, the "Rice ball with Rose Wine Fillings in Ginger soup", it is warm and surprising.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="tst korean food.jpg" alt="TST korean street" style="width:100%">
+      <h3>SSAL.BORI.SSAL</h3>
+      <h5>Calling Korean Food Lovers! You must visit this Korean Food street in TST!</h5>
+      <p>It is one of the most popular shop, luckily we got in early like around 6 pm, we saw a lot of people lining up outside. Fried Rice cake, Fried chicken, and Kimchi Soup are must-try!</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3>- About Me -</h3>
+    <h4><strong>Cherry</strong></h4>
+    <br>
+    <img src="Cherry.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="400" height="266">
+    <div class="w3-padding-32">
+      <h4><b>Always exploring for food</b></h4>
+      <h6><i>Don't count the calories, count the happiness food brings!</i></h6>
+      <p>Previously working as a social media content writer for 5 years, which really sparked my interest and gave me insights into the F&B industry in Macau. 2024 is a new beginning for me, I started working and studying in Hong Kong, and had a lot of unique and different experiences. Feel free to come along with me on the journey and I will continue to share things I love.</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>© Blissful Food Moments 2025</p>
+    </div>
+
+    <div class="w3-third">
+      <h3>SOCIAL MEDIA</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="Instagram.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Instagram</span><br>
+          <span>@blissfulfoodmoments</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="Facebook.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Facebook</span><br>
+          <span>blissfulfoodmoments</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Food</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Foodie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cafe hopping</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Happy hour</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food journey</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chinese food</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Pastry</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dessert</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Noodles</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Japanese</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Hong Kong</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Macau</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
